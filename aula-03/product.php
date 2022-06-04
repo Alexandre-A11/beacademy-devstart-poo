@@ -8,11 +8,13 @@ class Product {
     private string $name;
     private float $price;
     private string $descrition;
+    private readonly Category $category; // readonly = não pode ser alterado, PHP 8.1
 
-    // Métodos
-    public function __construct(string $name, float $price) {
-        $this->name = $name;
-        $this->price = $price;
+    // Método mágico de construção de objetos
+    public function __construct(string $newName, float $newPrice, Category $newCategory) {
+        $this->name = $newName;
+        $this->price = $newPrice;
+        $this->category = $newCategory;
     }
 
 
@@ -41,5 +43,9 @@ class Product {
 
     public function setDescription(string $newDescription): void {
         $this->descrition = $newDescription;
+    }
+
+    public function setCategory(Category $newCategory): void {
+        $this->category = $newCategory;
     }
 }
