@@ -18,7 +18,10 @@
     -   readonly
 -   [Aula 04](./aula-04)
     -   [Herança](./aula-04/index.php)
-
-*   [Aula 05](./aula-05)
+-   [Aula 05](./aula-05)
     -   [Interface](./aula-05/Interfaces/)
     -   [Static](./aula-05/ValidarCpf)
+-   [Aula 06](./aula-06/)
+    -   Composer
+        -   autoload '''php composer.phar dump-autoload'''
+    -   namespaces
