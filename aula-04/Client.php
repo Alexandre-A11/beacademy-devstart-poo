@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class Cliente extends Usuario {
+final class Cliente extends Usuario {
     private string $dataCadastro;
 
     public function getDataCadastro(): string {

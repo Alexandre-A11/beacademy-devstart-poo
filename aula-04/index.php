@@ -3,6 +3,7 @@ ini_set('display_errors', 1);
 
 include "User.php";
 include "Client.php";
+include "VipClient.php";
 include "Manager.php";
 include "GeneralManager.php";
 
@@ -16,10 +17,12 @@ $gestor_01->setSalario(6000);
 
 $gestorGeral_01 = new GeneralManager("fernanda@email.com", "f123456", 8000);
 
-$hacker = new Usuario("hacker@email.com", "password");
+// $hacker = new Usuario("hacker@email.com", "password");
+
+// $cliente_vip = new VipClient("cliente@vip.com.br", "123123");
 
 var_dump($cliente_01);
 var_dump($gestor_01);
 var_dump($gestorGeral_01);
-
-var_dump($hacker);
+// var_dump($hacker);
+// var_dump($cliente_vip);
