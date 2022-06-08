@@ -25,3 +25,4 @@
     -   Composer
         -   autoload '''php composer.phar dump-autoload'''
     -   namespaces
+    -   dompdf '''php composer.phar require dompdf/dompdf'''
